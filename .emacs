@@ -1,4 +1,11 @@
-;; Load MELPA package system into Emacs
+;;; Load package systems into Emacs
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://www.melpa.org/packages/"))
+
+;; Load ELPA packages into Emacs
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
+;; Load MELPA package system into Emacs
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
+;; Initialize packages
 (package-initialize)
