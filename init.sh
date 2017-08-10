@@ -1,6 +1,6 @@
-if [ -e "../.emacs" ]
+if [ -e "~/.emacs" ]
 then
-    rm ../.emacs
+    rm ~/.emacs
 fi
 
-ln -s ./.emacs ../.emacs
+ln -s ./.emacs ~/.emacs
