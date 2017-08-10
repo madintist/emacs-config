@@ -10,3 +10,10 @@
 
 ;; Refresh contents so we can see the packages
 (package-refresh-contents)
+
+
+;;; Load packages
+
+;; Evil mode
+(require 'evil)
+(evil-mode 1)
