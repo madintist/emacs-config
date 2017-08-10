@@ -1,6 +1,1 @@
-if [ -e "~/.emacs" ]
-then
-    rm ~/.emacs
-fi
-
-ln -s ./.emacs ~/.emacs
+ln -sf $PWD/.emacs ~/.emacs
