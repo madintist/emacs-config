@@ -18,6 +18,9 @@ Here's a list of packages / extensions that are used in this build:
   - For finding files, command autocompletion, etc.
 - [Magit](https://magit.vc/)
   - Git interface for Emacs.
+- [Tern](http://ternjs.net/doc/manual.html#emacs)
+  - JavaScript code analysis engine.
+  - You'll need to install the Tern engine with NPM as well.
   
 ## Modes
 
