@@ -16,3 +16,5 @@ Here's a list of packages / extensions that are used in this build:
   - Vim layer
 - [Helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
+- [Magit](https://magit.vc/)
+  - Git interface for Emacs.
