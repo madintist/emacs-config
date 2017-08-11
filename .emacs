@@ -55,4 +55,5 @@
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
 
 ;; Tern
+;; NOTE: This is not working currently
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
