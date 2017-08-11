@@ -44,4 +44,4 @@
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x) ; Use Helm as primary command center
 (global-set-key (kbd "C-x C-f") 'helm-find-files) ; Use Helm as file locator
-(global-set-key (kbd "C-x C-b") 'helm-buffers-list) ; Use Helm to show buffer list
+(global-set-key (kbd "C-x b") 'helm-buffers-list) ; Use Helm to show buffer list
