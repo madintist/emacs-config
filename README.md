@@ -18,3 +18,9 @@ Here's a list of packages / extensions that are used in this build:
   - For finding files, command autocompletion, etc.
 - [Magit](https://magit.vc/)
   - Git interface for Emacs.
+  
+## Modes
+
+And here's the list of language modes that have been added:
+
+- [markdown-mode](http://jblevins.org/projects/markdown-mode/)
