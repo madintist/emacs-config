@@ -29,6 +29,12 @@
 
 
 
+;;; Custom keybindings and settings
+
+(global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen) ; Set fullscreen custom keybindings
+
+
+
 ;;; Configure packages
 
 ;; Evil mode
