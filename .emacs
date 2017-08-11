@@ -44,3 +44,6 @@
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status) ; Set binding for magit-status command
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
+
+;; Tern
+(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
