@@ -47,6 +47,9 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files) ; Use Helm as file locator
 (global-set-key (kbd "C-x b") 'helm-buffers-list) ; Use Helm to show buffer list
 
+;; Linum (line numbers)
+(global-linum-mode t) ; Enable linum-mode by default
+
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status) ; Set binding for magit-status command
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
