@@ -11,7 +11,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,6 +39,9 @@
 
 
 ;;; Configure packages
+
+;; ac-js2
+(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 ;; Auto-complete
 (ac-config-default) ; Turn on auto-complete mode
