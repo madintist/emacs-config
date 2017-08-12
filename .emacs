@@ -31,9 +31,14 @@
 
 
 
-;;; Custom keybindings and settings
+;;; Custom settings
 
 (setq inhibit-startup-screen t) ; Turn off the startup screen
+
+
+
+;;; Custom Keybindings
+
 (global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen) ; Set fullscreen custom keybindings
 
 
