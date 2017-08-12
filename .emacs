@@ -11,7 +11,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -70,4 +70,10 @@
 
 ;; Tern
 ;; NOTE: This is not working currently
-(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+(add-to-list 'load-path "/usr/local/bin/tern/emacs/") ; Add Tern to load path
+(autoload 'tern-mode "tern.el" nil t) ; Load tern-mode
+(add-hook 'js2-mode-hook (lambda () (tern-mode t))) ; Hook tern-mode into js2-mode
+(eval-after-load 'tern
+  '(progn
+     (require 'tern-auto-complete)
+     (tern-ac-setup))) ; Use tern with auto-complete
