@@ -25,6 +25,8 @@
 
 (require 'package)
 (package-initialize)
+(when (memq 'window-system '(mac ns x))
+  (exec-path-from-shell-initialize)) ; Load PATH correctly for Mac
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")) ; Load ELPA packages into Emacs
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA package system into Emacs
 (package-refresh-contents) ; Refresh contents so we can see the packages
