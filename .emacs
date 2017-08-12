@@ -56,6 +56,9 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files) ; Use Helm as file locator
 (global-set-key (kbd "C-x b") 'helm-buffers-list) ; Use Helm to show buffer list
 
+;; JS2 Mode
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)) ; Make js2-mode the default for *.js files
+
 ;; Linum (line numbers)
 (global-linum-mode t) ; Enable linum-mode by default
 

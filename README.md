@@ -31,4 +31,6 @@ Here's a list of packages / extensions that are used in this build:
 And here's the list of language modes that have been added:
 
 - [js2-mode](https://github.com/mooz/js2-mode)
+  - For JavaScript
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
+  - For Markdown
