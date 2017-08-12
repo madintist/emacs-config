@@ -18,6 +18,8 @@ Here's a list of packages / extensions that are used in this build:
   - Autocomplete frontend
 - [Evil](https://github.com/emacs-evil/evil)
   - Vim layer
+- [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell)
+  - Get the PATH from our shell so that things work right
 - [Helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
 - [Magit](https://magit.vc/)
