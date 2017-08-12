@@ -36,6 +36,8 @@
 ;;; Custom settings
 
 (setq inhibit-startup-screen t) ; Turn off the startup screen
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin")) ; Add local bin to PATH
+(setq exec-path (append exec-path '("/usr/local/bin"))) ; Add local bin to exec-path
 
 
 
