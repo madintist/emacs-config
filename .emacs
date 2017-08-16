@@ -1,6 +1,16 @@
-;;; Variable configuration and such from the
-;;; original .emacs file that came with
-;;; my original copy of emacs.
+;;; .emacs --- Emacs config file
+
+
+
+;;; Commentary:
+;; Custom Emacs config by Joshua Kleveter
+;; custom-set-variables and custom-set-faces
+;; configuration and such from the
+;; original .emacs file that came with Emacs
+
+
+
+;;; Code:
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -92,3 +102,5 @@
   '(progn
      (require 'tern-auto-complete)
      (tern-ac-setup))) ; Use tern with auto-complete
+
+;;; .emacs ends here
