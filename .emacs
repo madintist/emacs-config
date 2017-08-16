@@ -114,14 +114,15 @@
 
 ;; Web Mode
 (require 'web-mode) ; Load web-mode
-(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html?'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode)) ; *.phtml
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode)) ; *.tpl.php
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode)) ; ?
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode)) ; *.aspx / *.asp
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; *.erb
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode)) ; *.mustache
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode)) ; *.djhtml
+(add-to-list 'auto-mode-alist '("\\.html?'" . web-mode)) ; *.html
+(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode)) ; *.css
 (setq web-mode-markup-indent-offset 2) ; Indent HTML to 2 spaces
 (setq web-mode-css-indent-offset 2) ; Indent CSS to 2 spaces
 (setq web-mode-code-indent-offset 2) ; Indent code to 2 spaces
