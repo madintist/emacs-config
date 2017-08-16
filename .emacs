@@ -60,7 +60,8 @@
 (evil-mode 1) ; Enable evil-mode by default
 
 ;; Flycheck
-
+(require 'flycheck) ; Load Flycheck
+(global-flycheck-mode t) ; Enable Flycheck globally
 
 ;; Helm
 (require 'helm-config)
