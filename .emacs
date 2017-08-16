@@ -83,8 +83,8 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)) ; Make js2-mode the default for *.js files
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode)) ; Make js2-jsx-mode the default for *.jsx files
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode)) ; Make js2-mode the default for node shells
-(setq js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
-(setq js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
+(setq-default js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
+(setq-default js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
 
 ;; Linum (line numbers)
 (global-linum-mode t) ; Enable linum-mode by default
