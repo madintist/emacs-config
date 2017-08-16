@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (flycheck exec-path-from-shell tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -72,6 +72,7 @@
 ;; Flycheck
 (require 'flycheck) ; Load Flycheck
 (global-flycheck-mode t) ; Enable Flycheck globally
+(flycheck-add-mode 'javascript-standard 'js2-mode) ; Use StandardJS in js2-mode
 
 ;; Helm
 (require 'helm-config)
@@ -92,6 +93,9 @@
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status) ; Set binding for magit-status command
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
+
+;; Projectile
+(projectile-mode t) ; Always enable Projectile
 
 ;; Tern
 ;; NOTE: This is not working currently
