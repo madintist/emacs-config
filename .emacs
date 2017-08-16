@@ -59,6 +59,9 @@
 (require 'evil)
 (evil-mode 1) ; Enable evil-mode by default
 
+;; Flycheck
+
+
 ;; Helm
 (require 'helm-config)
 (global-set-key (kbd "M-x") 'helm-M-x) ; Use Helm as primary command center
