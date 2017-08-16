@@ -42,5 +42,7 @@ And here's the list of language modes that have been added:
   - For JavaScript
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
   - For Markdown
+- [php-mode](https://www.emacswiki.org/emacs/PhpMode)
+  - For PHP files
 - [web-mode](http://web-mode.org/)
   - HTML / CSS / Embedded PHP, etc.

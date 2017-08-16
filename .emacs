@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -95,6 +95,10 @@
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status) ; Set binding for magit-status command
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
+
+;; PHP Mode
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode)) ; Use php-mode for *.php files
+(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode)) ; Use php-mode for *.inc files
 
 ;; Projectile
 (projectile-mode t) ; Always enable Projectile
