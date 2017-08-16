@@ -84,9 +84,9 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)) ; Make js2-mode the default for *.js files
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode)) ; Make js2-jsx-mode the default for *.jsx files
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode)) ; Make js2-mode the default for node shells
-(setq-default js2-basic-offset 2) ; Indent to 2 spaces in JS files (for StandardJS)
 (setq-default js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
 (setq-default js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
+(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2))) ; Indent to 2 spaces in JS files (for StandardJS)
 
 ;; Linum (line numbers)
 (global-linum-mode t) ; Enable linum-mode by default
