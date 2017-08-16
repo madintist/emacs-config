@@ -81,11 +81,12 @@
 (global-set-key (kbd "C-x b") 'helm-buffers-list) ; Use Helm to show buffer list
 
 ;; JS2 Mode
+(require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)) ; Make js2-mode the default for *.js files
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode)) ; Make js2-jsx-mode the default for *.jsx files
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode)) ; Make js2-mode the default for node shells
-(setq-default js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
-(setq-default js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
+(setq js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
+(setq js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
 (add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2))) ; Indent to 2 spaces in JS files (for StandardJS)
 
 ;; Linum (line numbers)
@@ -99,7 +100,6 @@
 (projectile-mode t) ; Always enable Projectile
 
 ;; Tern
-;; NOTE: This is not working currently
 (add-to-list 'load-path "/usr/local/bin/tern/emacs/") ; Add Tern to load path
 (autoload 'tern-mode "tern.el" nil t) ; Load tern-mode
 (add-hook 'js2-mode-hook (lambda () (tern-mode t))) ; Hook tern-mode into js2-mode
@@ -107,5 +107,19 @@
   '(progn
      (require 'tern-auto-complete)
      (tern-ac-setup))) ; Use tern with auto-complete
+
+;; Web Mode
+(require 'web-mode) ; Load web-mode
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?'" . web-mode))
+(setq web-mode-markup-indent-offset 2) ; Indent HTML to 2 spaces
+(setq web-mode-css-indent-offset 2) ; Indent CSS to 2 spaces
+(setq web-mode-code-indent-offset 2) ; Indent code to 2 spaces
 
 ;;; .emacs ends here
