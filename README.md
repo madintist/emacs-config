@@ -14,6 +14,8 @@ Here's a list of packages / extensions that are used in this build:
 
 - [ac-js2](https://github.com/ScottyB/ac-js2)
   - Improved autocomplete for js2-mode
+- [Ag (The Silver Searcher)](https://github.com/Wilfred/ag.el)
+  - Ag frontend for Emacs
 - [Auto-complete](https://github.com/auto-complete/auto-complete)
   - Autocomplete frontend
 - [Evil](https://github.com/emacs-evil/evil)
