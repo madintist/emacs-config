@@ -42,6 +42,15 @@
 ; List of packages to install by default
 (setq package-list '(ac-js2 ag auto-complete evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode))
 
+; Load ELPA packages into Emacs
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
+; Load MELPA package system into Emacs
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
+; Load Marmalade packages into Emacs
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ; Activate packages
 (package-initialize)
 
@@ -57,18 +66,6 @@
 ; Load PATH correctly for Mac
 (when (memq 'window-system '(mac ns x))
   (exec-path-from-shell-initialize))
-
-; Load ELPA packages into Emacs
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
-
-; Load MELPA package system into Emacs
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-
-; Load Marmalade packages into Emacs
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-
-; Refresh contents so we can see the packages
-(package-refresh-contents)
 
 
 
