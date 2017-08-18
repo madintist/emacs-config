@@ -32,7 +32,8 @@ Here's a list of packages / extensions that are used in this build:
   - Project searching
 - [Tern](http://ternjs.net/doc/manual.html#emacs)
   - JavaScript code analysis engine.
-  - You'll need to install the Tern engine with NPM as well.
+  - For this to work you'll need to clone [TernJS](https://github.com/ternjs/tern) into your `~` directory.
+  - See the TernJS Emacs documentation for more details.
   
 ## Modes
 

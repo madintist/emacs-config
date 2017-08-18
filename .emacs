@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -104,7 +104,7 @@
 (projectile-mode t) ; Always enable Projectile
 
 ;; Tern
-(add-to-list 'load-path "/usr/local/bin/tern/emacs/") ; Add Tern to load path
+(add-to-list 'load-path "~/tern/emacs/") ; Add Tern to load path
 (autoload 'tern-mode "tern.el" nil t) ; Load tern-mode
 (add-hook 'js2-mode-hook (lambda () (tern-mode t))) ; Hook tern-mode into js2-mode
 (eval-after-load 'tern
