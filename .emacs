@@ -122,6 +122,12 @@
 (ac-config-default)
 
 
+;; Electric pair mode
+
+; Turn on by default
+(electric-pair-mode t)
+
+
 ;; Evil mode
 
 ; Load evil mode
