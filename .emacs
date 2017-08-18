@@ -33,115 +33,226 @@
 
 ;;; Load package systems into Emacs
 
-(require 'package) ; Require package.el
+; Require package.el
+(require 'package)
 
-(defvar package-list) ; Declare the package-list so we can use it
+; Declare the package-list so we can use it
+(defvar package-list)
 
-(setq package-list '(ac-js2 ag auto-complete evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode)) ; List of packages to install by default
+; List of packages to install by default
+(setq package-list '(ac-js2 ag auto-complete evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode))
 
-(package-initialize) ; Activate packages
+; Activate packages
+(package-initialize)
 
+; Fetch the available packages
 (unless package-archive-contents
-  (package-refresh-contents)) ; Fetch the available packages
+  (package-refresh-contents))
 
 ; Install any packages that aren't yet installed
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
 
-(when (memq 'window-system '(mac ns x)) ; Load PATH correctly for Mac
+; Load PATH correctly for Mac
+(when (memq 'window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")) ; Load ELPA packages into Emacs
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA package system into Emacs
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; Load Marmalade packages into Emacs
+; Load ELPA packages into Emacs
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 
-(package-refresh-contents) ; Refresh contents so we can see the packages
+; Load MELPA package system into Emacs
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
+; Load Marmalade packages into Emacs
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+; Refresh contents so we can see the packages
+(package-refresh-contents)
 
 
 
 ;;; Custom settings
 
-(setq inhibit-startup-screen t) ; Turn off the startup screen
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin")) ; Add local bin to PATH
-(setq exec-path (append exec-path '("/usr/local/bin"))) ; Add local bin to exec-path
+; Turn off the startup screen
+(setq inhibit-startup-screen t)
+
+; Add local bin to PATH
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+
+; Add local bin to exec-path
+(setq exec-path (append exec-path '("/usr/local/bin")))
 
 
 
 ;;; Custom Keybindings
 
-(global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen) ; Set fullscreen custom keybindings
+; Set fullscreen custom keybindings
+(global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen)
 
 
 
 ;;; Configure packages
 
+
 ;; ac-js2
+
+; Hook ac-js2 into js2-mode
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
+
 ;; Auto-complete
-(ac-config-default) ; Turn on auto-complete mode
+
+; Turn on auto-complete mode
+(ac-config-default)
+
 
 ;; Evil mode
+
+; Load evil mode
 (require 'evil)
-(evil-mode 1) ; Enable evil-mode by default
+
+; Enable evil-mode by default
+(evil-mode 1)
+
 
 ;; Flycheck
-(require 'flycheck) ; Load Flycheck
-(global-flycheck-mode t) ; Enable Flycheck globally
-(flycheck-add-mode 'javascript-standard 'js2-mode) ; Use StandardJS in js2-mode
+
+; Load Flycheck
+(require 'flycheck)
+
+; Enable Flycheck globally
+(global-flycheck-mode t)
+
+; Use StandardJS in js2-mode
+(flycheck-add-mode 'javascript-standard 'js2-mode)
+
 
 ;; Helm
+
+; Load helm
 (require 'helm-config)
-(global-set-key (kbd "M-x") 'helm-M-x) ; Use Helm as primary command center
-(global-set-key (kbd "C-x C-f") 'helm-find-files) ; Use Helm as file locator
-(global-set-key (kbd "C-x b") 'helm-buffers-list) ; Use Helm to show buffer list
+
+; Use Helm as primary command center
+(global-set-key (kbd "M-x") 'helm-M-x)
+
+; Use Helm as file locator
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+
+; Use Helm to show buffer list
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+
 
 ;; JS2 Mode
+
+; Load js2-mode
 (require 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)) ; Make js2-mode the default for *.js files
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode)) ; Make js2-jsx-mode the default for *.jsx files
-(add-to-list 'interpreter-mode-alist '("node" . js2-mode)) ; Make js2-mode the default for node shells
-(setq js2-mode-show-parse-errors nil) ; Turn off parse error linting in js2-mode. Using Flycheck
-(setq js2-mode-show-strict-warnings nil) ; Turn off strict warnings in js2-mode. Using Flycheck
-(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2))) ; Indent to 2 spaces in JS files (for StandardJS)
+
+; Make js2-mode the default for *.js files
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+; Make js2-jsx-mode the default for *.jsx files
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode))
+
+; Make js2-mode the default for node shells
+(add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+
+; Turn off parse error linting in js2-mode. Using Flycheck
+(setq js2-mode-show-parse-errors nil)
+
+; Turn off strict warnings in js2-mode. Using Flycheck
+(setq js2-mode-show-strict-warnings nil)
+
+; Indent to 2 spaces in JS files (for StandardJS)
+(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
+
 
 ;; Linum (line numbers)
-(global-linum-mode t) ; Enable linum-mode by default
+
+; Enable linum-mode by default
+(global-linum-mode t)
+
 
 ;; Magit
-(global-set-key (kbd "C-x g") 'magit-status) ; Set binding for magit-status command
-(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup) ; Set binding for magit popup
+
+; Set binding for magit-status command
+(global-set-key (kbd "C-x g") 'magit-status)
+
+; Set binding for magit popup
+(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
+
 
 ;; PHP Mode
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode)) ; Use php-mode for *.php files
-(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode)) ; Use php-mode for *.inc files
+
+; Use php-mode for *.php files
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+
+; Use php-mode for *.inc files
+(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode))
+
 
 ;; Projectile
-(projectile-mode t) ; Always enable Projectile
+
+; Always enable Projectile
+(projectile-mode t)
+
 
 ;; Tern
-(add-to-list 'load-path "~/tern/emacs/") ; Add Tern to load path
-(autoload 'tern-mode "tern.el" nil t) ; Load tern-mode
-(add-hook 'js2-mode-hook (lambda () (tern-mode t))) ; Hook tern-mode into js2-mode
+
+; Add Tern to load path
+(add-to-list 'load-path "~/tern/emacs/")
+
+; Load tern-mode
+(autoload 'tern-mode "tern.el" nil t)
+
+; Hook tern-mode into js2-mode
+(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+
+; Use tern with auto-complete
 (eval-after-load 'tern
   '(progn
      (require 'tern-auto-complete)
-     (tern-ac-setup))) ; Use tern with auto-complete
+     (tern-ac-setup)))
+
 
 ;; Web Mode
-(require 'web-mode) ; Load web-mode
-(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode)) ; *.phtml
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode)) ; *.tpl.php
-(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode)) ; ?
-(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode)) ; *.aspx / *.asp
-(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; *.erb
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode)) ; *.mustache
-(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode)) ; *.djhtml
-(add-to-list 'auto-mode-alist '("\\.html?'" . web-mode)) ; *.html
-(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode)) ; *.css
-(setq web-mode-markup-indent-offset 2) ; Indent HTML to 2 spaces
-(setq web-mode-css-indent-offset 2) ; Indent CSS to 2 spaces
-(setq web-mode-code-indent-offset 2) ; Indent code to 2 spaces
+
+; Load web-mode
+(require 'web-mode)
+
+; *.phtml
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+
+; *.tpl.php
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+
+; *.aspx / *.asp
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+
+; *.erb
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+
+; *.mustache
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+
+; *.djhtml
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+; *.html
+(add-to-list 'auto-mode-alist '("\\.html?'" . web-mode))
+
+; *.css
+(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+
+; Indent HTML to 2 spaces
+(setq web-mode-markup-indent-offset 2)
+
+; Indent CSS to 2 spaces
+(setq web-mode-css-indent-offset 2)
+
+; Indent code to 2 spaces
+(setq web-mode-code-indent-offset 2)
+
+
 
 ;;; .emacs ends here
