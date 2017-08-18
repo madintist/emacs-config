@@ -33,12 +33,17 @@
 
 ;;; Load package systems into Emacs
 
-(require 'package)
-(package-initialize)
-(when (memq 'window-system '(mac ns x))
-  (exec-path-from-shell-initialize)) ; Load PATH correctly for Mac
+(require 'package) ; Require package.el
+
+(package-initialize) ; Activate packages
+
+(when (memq 'window-system '(mac ns x)) ; Load PATH correctly for Mac
+  (exec-path-from-shell-initialize))
+
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")) ; Load ELPA packages into Emacs
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA package system into Emacs
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; Load Marmalade packages into Emacs
+
 (package-refresh-contents) ; Refresh contents so we can see the packages
 
 
