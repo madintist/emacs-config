@@ -40,7 +40,7 @@
 (defvar package-list)
 
 ; List of packages to install by default
-(setq package-list '(ac-js2 ag auto-complete evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode))
+(setq package-list '(ac-js2 ag auto-complete auto-package-update evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode))
 
 ; Load ELPA packages into Emacs
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
@@ -62,6 +62,9 @@
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
+
+; Automatically update packages
+(auto-package-update-maybe)
 
 ; Load PATH correctly for Mac
 (when (memq 'window-system '(mac ns x))
