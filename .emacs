@@ -98,6 +98,9 @@
 ; Add local bin to exec-path
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
+; Always indent with spaces. No tabs
+(setq indent-tabs-mode nil)
+
 
 
 ;;; Custom Keybindings
