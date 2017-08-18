@@ -35,6 +35,8 @@
 
 (require 'package) ; Require package.el
 
+(setq-default package-list '(ac-js2 ag auto-complete evil exec-path-from-shell flycheck helm magit projectile tern tern-auto-complete js2-mode markdown-mode php-mode web-mode)) ; List of packages to install by default
+
 (package-initialize) ; Activate packages
 
 (when (memq 'window-system '(mac ns x)) ; Load PATH correctly for Mac
