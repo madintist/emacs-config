@@ -26,6 +26,8 @@ Here's a list of packages / extensions that are used in this build:
   - Get the PATH from our shell so that things work right
 - [Flycheck](http://flycheck.org)
   - Syntax checker
+- [git-gutter-fringe](https://github.com/syohex/emacs-git-gutter-fringe)
+  - Git gutter w/ support for linum-mode
 - [Helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
 - [Magit](https://magit.vc/)

@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 tern js2-mode markdown-mode magit helm evil))))
+    (git-gutter-fringe auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,6 +47,7 @@
 		     evil
 		     exec-path-from-shell
 		     flycheck
+                     git-gutter-fringe
 		     helm
 		     magit
 		     projectile
@@ -150,6 +151,18 @@
 
 ; Use StandardJS in js2-mode
 (flycheck-add-mode 'javascript-standard 'js2-mode)
+
+
+;; Git Gutter
+
+; Load Git Gutter
+(require 'git-gutter-fringe)
+
+; Keep Git Gutter mode on by default
+(global-git-gutter-mode t)
+
+; Use fringe on the right side
+(setq git-gutter-fr:side 'right-fringe)
 
 
 ;; Helm
