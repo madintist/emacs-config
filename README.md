@@ -30,6 +30,8 @@ Here's a list of packages / extensions that are used in this build:
   - Git gutter w/ support for linum-mode
 - [Helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
+- [Helm Swoop](https://github.com/ShingoFukuyama/helm-swoop)
+  - In-buffer line hopping with the Helm interface
 - [Magit](https://magit.vc/)
   - Git interface for Emacs.
 - [Projectile](https://github.com/bbatsov/projectile)
