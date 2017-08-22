@@ -181,6 +181,15 @@
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 
+;; Helm Swoop
+
+; Set keybinding for helm-swoop command
+(global-set-key (kbd "C-x c h s") 'helm-swoop)
+
+; Set keybinding for helm-multi-swoop command
+(global-set-key (kbd "C-x c h m") 'helm-multi-swoop)
+
+
 ;; JS2 Mode
 
 ; Load js2-mode
