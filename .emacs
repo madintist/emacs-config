@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete ac-js2 tern js2-mode markdown-mode magit helm evil))))
+    (helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -40,8 +40,7 @@
 (defvar package-list)
 
 ; List of packages to install by default
-(setq package-list '(ac-js2
-		     ag
+(setq package-list '(ag
 		     auto-complete
 		     auto-package-update
 		     evil
@@ -113,12 +112,6 @@
 
 
 ;;; Configure packages
-
-
-;; ac-js2
-
-; Hook ac-js2 into js2-mode
-(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 
 ;; Auto-complete
