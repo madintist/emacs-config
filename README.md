@@ -45,6 +45,8 @@ And here's the list of language modes that have been added:
 
 - [js2-mode](https://github.com/mooz/js2-mode)
   - For JavaScript
+- [json-mode](https://github.com/joshwnj/json-mode)
+  - For JSON files
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
   - For Markdown
 - [php-mode](https://www.emacswiki.org/emacs/PhpMode)
