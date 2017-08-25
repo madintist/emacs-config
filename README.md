@@ -18,6 +18,8 @@ Here's a list of packages / extensions that are used in this build:
   - Autocomplete frontend
 - [auto-package-update](https://github.com/rranelli/auto-package-update.el)
   - Automatically update Emacs packages
+- [Emmet](https://github.com/smihica/emmet-mode)
+  - Emmet. 'Nuff said.
 - [Evil](https://github.com/emacs-evil/evil)
   - Vim layer
 - [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell)

@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (js-doc json-mode helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (emmet-mode js-doc json-mode helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode ag projectile flycheck exec-path-from-shell tern-auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -43,6 +43,7 @@
 (setq package-list '(ag
 		     auto-complete
 		     auto-package-update
+                     emmet-mode
 		     evil
 		     exec-path-from-shell
 		     flycheck
@@ -126,6 +127,15 @@
 
 ; Turn on by default
 (electric-pair-mode t)
+
+
+;; Emmet mode
+
+; Load emmet-mode
+(require 'emmet-mode)
+
+; Always load emmet-mode in web-mode
+(add-hook 'web-mode-hook 'emmet-mode)
 
 
 ;; Evil mode
