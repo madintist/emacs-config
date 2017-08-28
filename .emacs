@@ -123,6 +123,9 @@
 ; Turn on auto-complete mode
 (ac-config-default)
 
+; Use TAB as the auto-complete trigger key
+(ac-set-trigger-key "TAB")
+
 
 ;; Electric pair mode
 
