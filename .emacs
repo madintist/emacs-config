@@ -126,6 +126,9 @@
 ; Turn on auto-complete mode
 (ac-config-default)
 
+; Turn off the auto-complete automatic trigger
+(setq ac-auto-start nil)
+
 ; Bind TAB to auto-complete
 (define-key ac-mode-map (kbd "TAB") 'auto-complete)
 
