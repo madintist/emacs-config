@@ -105,6 +105,9 @@
 ; Always indent with spaces. No tabs
 (setq-default indent-tabs-mode nil)
 
+; Highlight the current cursor line
+(global-hl-line-mode t)
+
 
 
 ;;; Custom Keybindings
