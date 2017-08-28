@@ -120,11 +120,14 @@
 
 ;; Auto-complete
 
+; Load auto-complete for config
+(require 'auto-complete)
+
 ; Turn on auto-complete mode
 (ac-config-default)
 
-; Use TAB as the auto-complete trigger key
-(ac-set-trigger-key "TAB")
+; Bind TAB to auto-complete
+(define-key ac-mode-map (kbd "TAB") 'auto-complete)
 
 
 ;; Electric pair mode
