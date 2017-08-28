@@ -200,8 +200,13 @@
 ; Turn on HL Line mode globally
 (global-hl-line-mode t)
 
-; Change the color! REALLY don't like the default yellow.
-(set-face-background hl-line-face "gray13")
+; This sets the background color of the line highlight
+(set-face-background 'highlight "gray13")
+
+; Then we bind the color to hl-line. We do it this way so that we keep syntax highlighting.
+(set-face-attribute 'hl-line nil
+                    :inherit nil
+                    :background (face-background 'highlight))
 
 
 ;; JS2 Mode
