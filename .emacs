@@ -126,14 +126,8 @@
 ; Turn on auto-complete mode
 (ac-config-default)
 
-; Turn off the auto-complete automatic trigger
-(setq ac-auto-start nil)
-
 ; No delay before quick help appears
-(setq ac-quick-help-delay 0)
-
-; Bind TAB to auto-complete
-(define-key ac-mode-map (kbd "TAB") 'auto-complete)
+(setq ac-quick-help-delay nil)
 
 
 ;; Electric pair mode
