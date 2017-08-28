@@ -105,8 +105,6 @@
 ; Always indent with spaces. No tabs
 (setq-default indent-tabs-mode nil)
 
-; Highlight the current cursor line
-(global-hl-line-mode t)
 
 
 
@@ -196,6 +194,14 @@
 
 ; Set keybinding for helm-multi-swoop command
 (global-set-key (kbd "C-x c h m") 'helm-multi-swoop)
+
+;; HL Line
+
+; Turn on HL Line mode globally
+(global-hl-line-mode t)
+
+; Change the color! REALLY don't like the default yellow.
+(set-face-background hl-line-face "gray13")
 
 
 ;; JS2 Mode
