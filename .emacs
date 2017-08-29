@@ -252,7 +252,7 @@
 (setq js2-basic-offset 2)
 
 ; Indent switch body by 2
-(js2-switch-indent-offset 2)
+(setq js-switch-indent-offset 2)
 
 
 ;; JS Doc
