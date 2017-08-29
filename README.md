@@ -12,8 +12,6 @@ Just my custom Emacs configuration. I'll add more notes about the setup here as 
 
 Here's a list of packages / extensions that are used in this build:
 
-- [Ag (The Silver Searcher)](https://github.com/Wilfred/ag.el)
-  - Ag frontend for Emacs
 - [Auto-complete](https://github.com/auto-complete/auto-complete)
   - Autocomplete frontend
 - [auto-package-update](https://github.com/rranelli/auto-package-update.el)
@@ -30,6 +28,8 @@ Here's a list of packages / extensions that are used in this build:
   - Git gutter w/ support for linum-mode
 - [Helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
+- [Helm AG](https://github.com/syohex/emacs-helm-ag)
+  - Search interface for Helm. Supports Ag, Pt, Grep, Ack, etc.
 - [Helm Swoop](https://github.com/ShingoFukuyama/helm-swoop)
   - In-buffer line hopping with the Helm interface
 - [JS-Doc](https://github.com/mooz/js-doc)
