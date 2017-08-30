@@ -205,7 +205,7 @@
 (setq helm-ag-base-command "pt -e --nocolor --nogroup")
 
 ; Keybinding for helm-ag
-(global-set-key (kbd "C-c p s s") 'helm-ag)
+(global-set-key (kbd "C-c p s h") 'helm-ag)
 
 
 ;; Helm Swoop
