@@ -8,9 +8,24 @@ Just my custom Emacs configuration. I'll add more notes about the setup here as 
 2. If you have an existing `.emacs` file that you want to save make sure to back it up somewhere besides your home directory.
 3. Run the `init.sh` script in the repo. This will symlink the `.emacs` file from this repo into your home directory.
 
+## Modes
+
+Here's the list of language modes that have been added:
+
+- [js2-mode](https://github.com/mooz/js2-mode)
+  - For JavaScript
+- [json-mode](https://github.com/joshwnj/json-mode)
+  - For JSON files
+- [markdown-mode](http://jblevins.org/projects/markdown-mode/)
+  - For Markdown
+- [php-mode](https://www.emacswiki.org/emacs/PhpMode)
+  - For PHP files
+- [web-mode](http://web-mode.org/)
+  - HTML / CSS / Embedded PHP, etc.
+
 ## Packages
 
-Here's a list of packages / extensions that are used in this build:
+And here's a list of packages / extensions that are used in this build:
 
 - [Auto-complete](https://github.com/auto-complete/auto-complete)
   - Autocomplete frontend
@@ -42,18 +57,3 @@ Here's a list of packages / extensions that are used in this build:
   - JavaScript code analysis engine.
   - For this to work you'll need to clone [TernJS](https://github.com/ternjs/tern) into your `~` directory.
   - See the TernJS Emacs documentation for more details.
-  
-## Modes
-
-And here's the list of language modes that have been added:
-
-- [js2-mode](https://github.com/mooz/js2-mode)
-  - For JavaScript
-- [json-mode](https://github.com/joshwnj/json-mode)
-  - For JSON files
-- [markdown-mode](http://jblevins.org/projects/markdown-mode/)
-  - For Markdown
-- [php-mode](https://www.emacswiki.org/emacs/PhpMode)
-  - For PHP files
-- [web-mode](http://web-mode.org/)
-  - HTML / CSS / Embedded PHP, etc.
