@@ -20,6 +20,9 @@ Here's the list of language modes that have been added:
   - For Markdown
 - [php-mode](https://www.emacswiki.org/emacs/PhpMode)
   - For PHP files
+- [slime](https://github.com/slime/slime)
+  - Lisp IDE
+  - Configured to use SBCL
 - [web-mode](http://web-mode.org/)
   - HTML / CSS / Embedded PHP, etc.
 
