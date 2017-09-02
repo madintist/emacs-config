@@ -365,5 +365,14 @@
 (setq web-mode-code-indent-offset 2)
 
 
+;; Yasnippet
+
+; Load Yasnippet
+(require 'yasnippet)
+
+; Turn on Yasnippet
+(yas-global-mode t)
+
+
 
 ;;; .emacs ends here

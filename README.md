@@ -57,3 +57,5 @@ And here's a list of packages / extensions that are used in this build:
   - JavaScript code analysis engine.
   - For this to work you'll need to clone [TernJS](https://github.com/ternjs/tern) into your `~` directory.
   - See the TernJS Emacs documentation for more details.
+- [yasnippet](https://github.com/joaotavora/yasnippet)
+  - Code snippet system
