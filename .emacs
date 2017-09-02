@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (helm-ag emmet-mode js-doc json-mode helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode projectile flycheck exec-path-from-shell tern-auto-complete tern js2-mode markdown-mode magit helm evil))))
+    (yasnippet helm-ag emmet-mode js-doc json-mode helm-swoop git-gutter-fringe auto-package-update auto-complete php-mode web-mode projectile flycheck exec-path-from-shell tern-auto-complete tern js2-mode markdown-mode magit helm evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
