@@ -319,9 +319,6 @@
 ; Not sure what this does... They said to do it
 (setq slime-contribs '(slime-fancy))
 
-; Load SLIME in Lisp files by default
-(add-to-list 'auto-mode-alist '("\\.lisp\\" . slime-mode))
-
 
 ;; Tern
 
