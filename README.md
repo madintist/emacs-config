@@ -27,33 +27,33 @@ Here's the list of language modes that have been added:
 
 And here's a list of packages / extensions that are used in this build:
 
-- [Auto-complete](https://github.com/auto-complete/auto-complete)
+- [auto-complete](https://github.com/auto-complete/auto-complete)
   - Autocomplete frontend
 - [auto-package-update](https://github.com/rranelli/auto-package-update.el)
   - Automatically update Emacs packages
-- [Emmet](https://github.com/smihica/emmet-mode)
+- [emmet](https://github.com/smihica/emmet-mode)
   - Emmet. 'Nuff said.
-- [Evil](https://github.com/emacs-evil/evil)
+- [evil](https://github.com/emacs-evil/evil)
   - Vim layer
 - [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell)
   - Get the PATH from our shell so that things work right
-- [Flycheck](http://flycheck.org)
+- [flycheck](http://flycheck.org)
   - Syntax checker
 - [git-gutter-fringe](https://github.com/syohex/emacs-git-gutter-fringe)
   - Git gutter w/ support for linum-mode
-- [Helm](https://emacs-helm.github.io/helm/)
+- [helm](https://emacs-helm.github.io/helm/)
   - For finding files, command autocompletion, etc.
-- [Helm AG](https://github.com/syohex/emacs-helm-ag)
+- [helm-ag](https://github.com/syohex/emacs-helm-ag)
   - Search interface for Helm. Supports Ag, Pt, Grep, Ack, etc.
-- [Helm Swoop](https://github.com/ShingoFukuyama/helm-swoop)
+- [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop)
   - In-buffer line hopping with the Helm interface
-- [JS-Doc](https://github.com/mooz/js-doc)
+- [js-doc](https://github.com/mooz/js-doc)
   - Easily add JSDoc comments
-- [Magit](https://magit.vc/)
+- [magit](https://magit.vc/)
   - Git interface for Emacs.
-- [Projectile](https://github.com/bbatsov/projectile)
+- [projectile](https://github.com/bbatsov/projectile)
   - Project searching
-- [Tern](http://ternjs.net/doc/manual.html#emacs)
+- [tern](http://ternjs.net/doc/manual.html#emacs)
   - JavaScript code analysis engine.
   - For this to work you'll need to clone [TernJS](https://github.com/ternjs/tern) into your `~` directory.
   - See the TernJS Emacs documentation for more details.
