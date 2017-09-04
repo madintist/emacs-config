@@ -2,6 +2,15 @@
 
 
 
+;;; Commentary:
+;; This file does the initial setup to get Emacs working right.
+;; We add the package archives,
+;; make sure that use-package is installed,
+;; check that the PATH is loaded correctly,
+;; and load all of the config files.
+
+
+
 ;;; Code:
 
 
