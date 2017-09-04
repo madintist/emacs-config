@@ -9,6 +9,12 @@ elpa/
 
 ## Files to ignore
 
+# Emacs autosave files
+**/\#*\#
+
+# Emacs backup files
+**/*\~
+
 # *.dat files
 *.dat
 
