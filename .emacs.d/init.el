@@ -15,31 +15,20 @@
 
 
 ;; Load package archives
+(require 'package) ; Load the package system into Emacs
+(setq package-enable-at-startup nil) ; Turn off startup packages. Using use-package for this.
+(add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/")) ; Load GNU archives
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; Load Marmalade
+(package-initialize) ; Activate packages
 
-; Load the package system into Emacs
-(require 'package)
 
-; Turn off startup packages. Using use-package for this.
-(setq package-enable-at-startup nil)
-
-; Load GNU archives
-(add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/"))
-
-; Load MELPA
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-
-; Load Marmalade
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-
-; Activate packages
-(package-initialize)
-
-; Install use-package if it's not installed yet
+;; Install use-package if it's not installed yet
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
-; Load use-package
+;; Load use-package
 (eval-when-compile
   (require 'use-package))
 (require 'diminish)
@@ -48,19 +37,15 @@
 
 ;; Load PATH
 (use-package exec-path-from-shell
-             :if (memq window-system '(mac ns x))
-             :ensure t
-             :config
-             (exec-path-from-shell-initialize))
+  :if (memq window-system '(mac ns x))
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
 
 
 ;; Load configuration
-
-; Load the `load-directory` function
-(load "~/.emacs.d/load-directory")
-
-; Load the config directory
-(load-directory "~/.emacs.d/config")
+(load "~/.emacs.d/load-directory") ; Load the `load-directory` function
+(load-directory "~/.emacs.d/config") ; Load the config directory
 
 
 ;; Code that's automatically added by Custom. Leave it alone.
