@@ -9,7 +9,8 @@
 ;;; Code:
 (use-package tern
   :ensure t
-  :load-path "~/.emacs.d/lib/tern/emacs/"
+  :load-path
+  ("~/.emacs.d/lib/tern/emacs/")
   :init
   (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
   (autoload 'tern-mode "tern.el" nil t)
