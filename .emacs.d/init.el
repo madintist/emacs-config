@@ -25,6 +25,17 @@
 ; Activate packages
 (package-initialize)
 
+; Install use-package if it's not installed yet
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+; Load use-package
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
+(require 'bind-key)
+
 
 ;; Load configuration
 
