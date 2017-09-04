@@ -4,11 +4,29 @@
 
 ;;; Code:
 
+
+;; Load package archives
+
+; Load the package system into Emacs
+(require 'package)
+
+; Load GNU archives
+(add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/"))
+
+; Load MELPA
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
+; Load Marmalade
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages"))
+
+; Activate packages
+(package-initialize)
+
+
+;; Load configuration
+
 ; Load the `load-directory` function
 (load "~/.emacs.d/load-directory")
-
-; Load the packages system (we need this before config)
-(load "~/.emacs.d/load-packages")
 
 ; Load the config directory
 (load-directory "~/.emacs.d/config")
