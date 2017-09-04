@@ -22,9 +22,6 @@
 ; Activate packages
 (package-initialize)
 
-; Load use-package
-(load "~/.emacs.d/use-package/use-package")
-
 
 ;; Load configuration
 
