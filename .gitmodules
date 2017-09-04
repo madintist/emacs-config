@@ -1,0 +1,3 @@
+[submodule ".emacs.d/lib/tern"]
+	path = .emacs.d/lib/tern
+	url = git@github.com:ternjs/tern.git
