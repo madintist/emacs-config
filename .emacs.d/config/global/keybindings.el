@@ -3,6 +3,4 @@
 
 
 ;;; Code:
-
-; Set keybinding for fullscreen mode
-(global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen)
+(global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen) ; Set keybinding for fullscreen mode
