@@ -9,5 +9,8 @@ elpa/
 
 ## Files to ignore
 
+# *.dat files
+*.dat
+
 # Ignore network security
 network-security.data
