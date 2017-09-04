@@ -37,6 +37,14 @@
 (require 'bind-key)
 
 
+;; Load PATH
+(use-package exec-path-from-shell
+             :if (memq window-system '(mac ns x))
+             :ensure t
+             :config
+             (exec-path-from-shell-initialize))
+
+
 ;; Load configuration
 
 ; Load the `load-directory` function
