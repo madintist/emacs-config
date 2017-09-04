@@ -1,5 +1,8 @@
 ## Directories to ignore
 
+# Ignore auto saves
+auto-save-list/
+
 # Ignore package archive files
 elpa/
 
