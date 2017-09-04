@@ -10,6 +10,9 @@
 ; Load the package system into Emacs
 (require 'package)
 
+; Turn off startup packages. Using use-package for this.
+(setq package-enable-at-startup nil)
+
 ; Load GNU archives
 (add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/"))
 
