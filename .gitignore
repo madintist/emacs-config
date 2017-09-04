@@ -1,2 +1,25 @@
-# Some wierd filetype from Emacs. Don't need it.
-\.*~
+## Directories to ignore
+
+# Ignore auto saves
+auto-save-list/
+
+# Ignore package archive files
+elpa/
+
+
+## Files to ignore
+
+# Emacs autosave files
+**/\#*\#
+
+# Emacs backup files
+**/*\~
+
+# *.dat files
+*.dat
+
+# *.eld files
+*.eld
+
+# Ignore network security
+network-security.data
