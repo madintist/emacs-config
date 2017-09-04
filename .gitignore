@@ -18,5 +18,8 @@ elpa/
 # *.dat files
 *.dat
 
+# *.eld files
+*.eld
+
 # Ignore network security
 network-security.data
