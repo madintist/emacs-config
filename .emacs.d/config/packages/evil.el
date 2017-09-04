@@ -4,6 +4,6 @@
 
 ;;; Code:
 (use-package evil
-             :ensure t
-             :config
-             (evil-mode t))
+  :ensure t
+  :config
+  (evil-mode t))
