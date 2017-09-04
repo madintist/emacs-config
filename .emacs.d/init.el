@@ -17,7 +17,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 ; Load Marmalade
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 ; Activate packages
 (package-initialize)
