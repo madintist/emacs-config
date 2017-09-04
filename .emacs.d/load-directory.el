@@ -2,6 +2,13 @@
 
 
 
+;;; Commentary:
+;; Define the `load-directory' function.
+;; This will recursively load all `.el' files
+;; in a specified directory.
+
+
+
 ;;; Code:
 (defun load-directory (directory)
   "Recursively load all `.el' files in DIRECTORY."
@@ -15,3 +22,7 @@
         (load-directory fullpath))
        ((and (eq isdir nil) (string= (substring path -3) ".el"))
         (load (file-name-sans-extension fullpath)))))))
+
+
+
+;;; load-directory.el ends here
