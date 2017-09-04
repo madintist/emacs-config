@@ -11,7 +11,7 @@
            (isdir (car (cdr element)))
            (ignore-dir (or (string= path ".") (string= path ".."))))
       (cond
-        ((and (eq isdir t) (not ignore-dir))
-         (load-directory fullpath))
-        ((and (eq isdir nil) (string= (substring path -3) ".el"))
-         (load (file-name-sans-extension fullpath)))))))
+       ((and (eq isdir t) (not ignore-dir))
+        (load-directory fullpath))
+       ((and (eq isdir nil) (string= (substring path -3) ".el"))
+        (load (file-name-sans-extension fullpath)))))))
