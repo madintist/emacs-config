@@ -3,9 +3,5 @@
 
 
 ;;; Code:
-
-; Always indent with spaces, not tabs.
-(setq-default indent-tabs-mode nil)
-
-; Turn off the startup screen
-(setq inhibit-startup-screen t)
+(setq-default indent-tabs-mode nil) ; Always indent with spaces, not tabs.
+(setq inhibit-startup-screen t) ; Turn off the startup screen
