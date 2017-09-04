@@ -1,0 +1,10 @@
+## Directories to ignore
+
+# Ignore package archive files
+elpa/
+
+
+## Files to ignore
+
+# Ignore network security
+network-security.data
