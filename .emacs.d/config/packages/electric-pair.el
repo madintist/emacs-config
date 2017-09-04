@@ -3,7 +3,4 @@
 
 
 ;;; Code:
-(use-package electric-pair-mode
-  :ensure t
-  :config
-  (electric-pair-mode t))
+(electric-pair-mode t) ; Turn on electric-pair-mode globally
