@@ -14,7 +14,6 @@
   :ensure t
   :init
   (setq helm-ag-fuzzy-match t)
-  (setq helm-ag-base-command "pt -e nocolor --nogroup")
   :bind
   ("C-c p s h" . helm-ag))
 
