@@ -47,6 +47,8 @@ These are the other packages that I've added (minor modes and such):
   - Add JSDoc comments
 - [magit](https://magit.vc/)
   - Emacs Git interface
+- [mocha-snippets](https://github.com/cowboyd/mocha-snippets.el)
+  - YASnippets for Mocha
 - [projectile](https://github.com/bbatsov/projectile)
   - Project jumping / searching
 - [slime](https://common-lisp.net/project/slime/)
