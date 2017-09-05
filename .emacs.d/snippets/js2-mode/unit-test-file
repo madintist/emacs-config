@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: unit test file
+# key: unit-test-file
+# --
+'use strict'
+/**
+ * @fileOverview ${1:file overview}
+ * @name ${2:file name}
+ * @author ${3:file author}
+ */
+
+/******************
+ * Module Imports *
+ ******************/
+
+/*********
+ * Setup *
+ *********/
+
+/**************
+ * Unit Tests *
+ **************/
+$0
