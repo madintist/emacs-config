@@ -11,7 +11,9 @@
 (use-package yasnippet
   :ensure t
   :config
-  (yas-global-mode t))
+  (yas-global-mode t)
+  (define-key yas-minor-mode-map (kbd "TAB") yas-maybe-expand)
+  (define-key yas-minor-mode-map (kbd "C-c x") #'yas-expand))
 
 
 
