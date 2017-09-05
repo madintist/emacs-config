@@ -10,6 +10,9 @@
 ;;; Code:
 (use-package yasnippet
   :ensure t
+  :bind
+  (("TAB" . yas-maybe-expand)
+   ("C-c x" . yas-expand))
   :config
   (yas-global-mode t))
 
