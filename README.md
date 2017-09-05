@@ -21,6 +21,9 @@ These are the langage modes that I've added:
 
 These are the other packages that I've added (minor modes and such):
 
+- [ag](https://github.com/Wilfred/ag.el)
+  - Interface for The Silver Searcher
+  - Need this for helm-ag to work
 - [auto-complete](https://github.com/auto-complete/auto-complete)
   - Auto completion provider for all major modes
 - [emmet-mode](https://github.com/smihica/emmet-mode)
