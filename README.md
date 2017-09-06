@@ -44,6 +44,8 @@ These are the other packages that I've added (minor modes and such):
   - Helm interface for Projectile
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop)
   - Really easy way to hop around files
+- [hl-todo](https://github.com/tarsius/hl-todo)
+  - Highlighting of TODO comments, etc.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
 - [magit](https://magit.vc/)
