@@ -9,9 +9,13 @@
  * @author ${3:file author}
  */
 
+/* eslint-env mocha */
+
 /******************
  * Module Imports *
  ******************/
+
+const chai = require('chai')
 
 /*********
  * Setup *
@@ -20,4 +24,15 @@
 /**************
  * Unit Tests *
  **************/
-$0
+
+describe('${4:context}', function () {
+    /*********
+     * Hooks *
+     *********/
+
+     $0
+
+    /*********
+     * Tests *
+     *********/
+})
