@@ -1,4 +1,4 @@
-;;; hl-todo.el --- Configuration for hl-todo-mode
+;;; hl-todo.el --- Configuration for hl-todo
 
 
 
@@ -9,7 +9,7 @@
 
 
 ;;; Code:
-(use-package hl-todo-mode
+(use-package hl-todo
   :ensure t
   :bind
   (("C-c o" . hl-todo-occur))
