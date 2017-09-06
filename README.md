@@ -26,6 +26,8 @@ These are the other packages that I've added (minor modes and such):
   - Need this for helm-ag to work
 - [auto-complete](https://github.com/auto-complete/auto-complete)
   - Auto completion provider for all major modes
+- [auto-package-update](https://github.com/rranelli/auto-package-update.el)
+  - Automatically check for package updates
 - [emmet-mode](https://github.com/smihica/emmet-mode)
   - Emmet for Emacs
 - [evil](https://github.com/emacs-evil/evil)
@@ -38,7 +40,6 @@ These are the other packages that I've added (minor modes and such):
   - Major upgrade to all Emacs menus (M-x, buffer list, etc.)
 - [helm-ag](https://github.com/syohex/emacs-helm-ag)
   - Silver Searcher interface for Helm
-  - I'm using [The Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher) as a search provider
 - [helm-projectile](https://github.com/bbatsov/helm-projectile)
   - Helm interface for Projectile
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop)
