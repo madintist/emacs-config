@@ -21,5 +21,8 @@ elpa/
 # *.eld files
 *.eld
 
+# Package update log
+.last-package-update-day
+
 # Ignore network security
 network-security.data
