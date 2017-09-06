@@ -27,5 +27,9 @@
 (setq inhibit-startup-screen t) ; Turn off the startup screen
 
 
+;; Hooks:
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+
 
 ;;; emacs.el ends here
