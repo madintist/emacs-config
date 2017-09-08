@@ -13,8 +13,9 @@
 (use-package auto-complete
   :ensure t
   :init
-  (setq ac-use-quick-help t)
+  (setq ac-stop-flymake-on-completing t)
   (setq ac-quick-help-delay 0.5)
+  (setq ac-use-quick-help t)
   :config
   (ac-config-default))
 
