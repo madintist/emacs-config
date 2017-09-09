@@ -12,6 +12,8 @@ These are the langage modes that I've added:
   - *.json
 - [markdown-mode](https://jblevins.org/projects/markdown-mode/)
   - *.md, *.markdown
+- [multi-term](https://www.emacswiki.org/emacs/MultiTerm)
+  - terminal emulator mode
 - [php-mode](https://github.com/ejmr/php-mode)
   - *.php, *.inc
 - [web-mode](http://web-mode.org/)

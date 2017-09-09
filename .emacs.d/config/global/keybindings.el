@@ -10,8 +10,8 @@
 ;;; Code:
 
 ;; Terminal Commands:
-(global-set-key (kbd "C-x t b") (lambda () (interactive) (ansi-term "/bin/bash"))) ; Start ANSI-term with Bash
-(global-set-key (kbd "C-x t z") (lambda () (interactive) (ansi-term "/bin/zsh"))) ; Start ANSI-term with ZSH
+(global-set-key (kbd "C-x t b") (lambda () (interactive) (ansi-term "/bin/bash" "ANSI-Term Bash"))) ; Start ANSI-term with Bash
+(global-set-key (kbd "C-x t z") (lambda () (interactive) (ansi-term "/bin/zsh" "ANSI-Term ZSH"))) ; Start ANSI-term with ZSH
 
 ;; Window Commands:
 (global-set-key (kbd "C-x T F") 'toggle-frame-fullscreen) ; Set keybinding for fullscreen mode
