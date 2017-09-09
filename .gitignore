@@ -6,6 +6,9 @@ auto-save-list/
 # Ignore package archive files
 elpa/
 
+# Ignore eshell history
+eshell/
+
 
 ## Files to ignore
 
