@@ -30,6 +30,9 @@ These are the other packages that I've added (minor modes and such):
   - Automatically check for package updates
 - [emmet-mode](https://github.com/smihica/emmet-mode)
   - Emmet for Emacs
+- [eshell-git-prompt](https://github.com/xuchunyang/eshell-git-prompt)
+  - A nice prompt for Eshell.
+  - I use the powerline theme
 - [evil](https://github.com/emacs-evil/evil)
   - Vim emulator mode
 - [flycheck](http://www.flycheck.org/en/latest/)
