@@ -10,6 +10,8 @@
 (use-package js-comint
   :ensure t
   :init
+  (setq inferior-js-program-command "node")
+  (setq inferior-js-program-arguments '("--interactive"))
   (add-hook 'js2-mode-hook
             (lambda ()
               (local-set-key (kbd "C-x C-e") 'js-send-last-sexp)
