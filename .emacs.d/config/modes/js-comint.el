@@ -9,8 +9,6 @@
 ;;; Code:
 (use-package js-comint
   :ensure t
-  :bind
-  ("C-c M-o" . js-comint-clear)
   :init
   (setq inferior-js-program-command "node")
   (setq inferior-js-program-arguments '("--interactive"))
