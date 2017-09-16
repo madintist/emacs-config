@@ -23,6 +23,8 @@ These are the langage modes that I've added:
 
 These are the other packages that I've added (minor modes and such):
 
+- [add-node-modules-path](https://github.com/codesuki/add-node-modules-path)
+  - Add node_modules/ to the project path
 - [ag](https://github.com/Wilfred/ag.el)
   - Interface for The Silver Searcher
   - Need this for helm-ag to work
