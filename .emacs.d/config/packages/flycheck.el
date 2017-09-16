@@ -4,7 +4,7 @@
 
 ;;; Commentary:
 ;; - Install flycheck-mode with use-package.
-;; - Use javascript-standard as the linter in js2-mode
+;; - Use javascript-standard as the linter in js2-mode by default
 
 
 
