@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: function
+# key: function
+# --
+/**
+ * ${3:Document Comment}
+ * $0
+ */
+function ${1:functionName} (${2:parameters}) {
+  /*************
+   * Variables *
+   *************/
+
+  /******************
+   * Function Logic *
+   ******************/
+}
