@@ -11,7 +11,8 @@
 (use-package mocha
   :ensure t
   :init
-  (setq mocha-project-test-directory "tests"))
+  (setq mocha-project-test-directory "tests")
+  (setq mocha-reporter "spec"))
 
 
 
