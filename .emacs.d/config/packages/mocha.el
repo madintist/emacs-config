@@ -10,8 +10,8 @@
 ;;; Code:
 (use-package mocha
   :ensure t
-  :config
-  (mocha-project-test-directory . "tests"))
+  :init
+  (setq mocha-project-test-directory "tests"))
 
 
 
