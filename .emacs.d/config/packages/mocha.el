@@ -3,12 +3,15 @@
 
 
 ;;; Commentary:
+;; Easy way to run Mocha tests in Emacs
 
 
 
 ;;; Code:
 (use-package mocha
-  :ensure t)
+  :ensure t
+  :config
+  (mocha-project-test-directory . "tests"))
 
 
 
