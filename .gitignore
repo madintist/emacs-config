@@ -29,3 +29,6 @@ eshell/
 
 # Ignore network security
 network-security.data
+
+# Mac DS_Store files
+.DS_Store
