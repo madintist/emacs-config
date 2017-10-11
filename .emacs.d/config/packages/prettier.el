@@ -3,6 +3,8 @@
 
 
 ;;; Commentary:
+;; We're actually using prettier-standard here to
+;; make sure that we're compatible with StandardJS
 
 
 
@@ -10,7 +12,7 @@
 (use-package prettier-js
   :ensure t
   :init
-  (setq prettier-js-args '("--no-semi" "--single-quote"))
+  (setq prettier-js-command "prettier-standard")
   (add-hook 'js2-mode-hook 'prettier-js-mode))
 
 
