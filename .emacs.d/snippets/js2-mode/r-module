@@ -14,9 +14,9 @@ var ${4:moduleName} = (function () {
    * Module Imports *
    ******************/
 
-  /*************************
-   * Variable Declarations *
-   *************************/
+  /****************
+   * Declarations *
+   ****************/
 
   /**********************
    * Internal Functions *

@@ -30,8 +30,6 @@ describe('${4:context}', function () {
      * Hooks *
      *********/
 
-     $0
-
     /*********
      * Tests *
      *********/

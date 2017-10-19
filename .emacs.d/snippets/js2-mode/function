@@ -7,9 +7,9 @@
  * $0
  */
 function ${1:functionName} (${2:parameters}) {
-  /*************
-   * Variables *
-   *************/
+  /****************
+   * Declarations *
+   ****************/
 
   /******************
    * Function Logic *
