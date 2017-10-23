@@ -62,6 +62,8 @@ These are the other packages that I've added (minor modes and such):
   - Emacs Git interface
 - [mocha](https://github.com/scottaj/mocha.el)
   - Mode for running Mocha tests
+- [origami](https://github.com/gregsexton/origami.el)
+  - Code folding for several major modes
 - [prettier-js](https://github.com/prettier/prettier-emacs)
   - JavaScript linter/formatter
   - Used in js2-mode
