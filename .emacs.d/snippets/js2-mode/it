@@ -1,15 +1,8 @@
 # -*- mode: snippet -*-
-# name: describe
-# key: describe
+# name: it
+# key: it
 # --
-describe('${1:scope}', function () {
-  /*********
-   * Hooks *
-   *********/
-
-  /*********
-   * Tests *
-   *********/
-
-  $0
+it('${1:behavior}', function () {
+  // Test
+  expect(${2:test target})$0
 })
