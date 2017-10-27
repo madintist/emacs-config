@@ -27,6 +27,9 @@ eshell/
 # Package update log
 .last-package-update-day
 
+# Projectile Cache
+projectile.cache
+
 # Ignore network security
 network-security.data
 
