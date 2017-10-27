@@ -9,7 +9,9 @@
 
 ;;; Code:
 (use-package lsp-mode
-  :ensure t)
+  :ensure t
+  :init
+  (require 'lsp-flycheck))
 
 
 ;;; lsp-mode.el ends here
