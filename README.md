@@ -58,6 +58,8 @@ These are the other packages that I've added (minor modes and such):
   - Highlighting of TODO comments, etc.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
+- [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
+  - Microsoft LSP for JavaScript
 - [magit](https://magit.vc/)
   - Emacs Git interface
 - [mocha](https://github.com/scottaj/mocha.el)
