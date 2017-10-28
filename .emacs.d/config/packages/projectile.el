@@ -15,6 +15,9 @@
   (setq projectile-project-root-files
         '(".git" ".bzr" ".svn" ".hg"  "_darcs" ".projectile" "Makefile"))
   :config
+  (setq projectile-mode-line
+        '(:eval (format " Projectile[%s(%s)]"
+                        (projectile-project-name))))
   (projectile-mode t))
 
 
