@@ -26,6 +26,7 @@
    ("\\.as[cp]x\\'" . web-mode)
    ("\\.erb\\'" . web-mode)
    ("\\.mustache\\'" . web-mode)
+   ("\\.hbs\\'" . web-mode)
    ("\\.djhtml\\'" . web-mode)
    ("\\.html?\\'" . web-mode)
    ("\\.css\\'" . web-mode))
