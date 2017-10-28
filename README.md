@@ -6,6 +6,8 @@ Just my custom Emacs configuration. I'll add more notes about the setup here as 
 
 These are the langage modes that I've added:
 
+- [apache-mode](https://www.emacswiki.org/emacs/apache-mode.el)
+  - Apache server config files
 - [js-comint](https://github.com/redguardtoo/js-comint)
   - JavaScript REPL
 - [js2-mode](https://github.com/mooz/js2-mode)
