@@ -12,7 +12,6 @@
 ;;; Code:
 (use-package git-gutter-fringe
   :ensure t
-  :defer t
   :init
   (setq git-gutter-fr:side 'right-fringe)
   :config
