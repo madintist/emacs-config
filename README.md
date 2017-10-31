@@ -66,6 +66,9 @@ These are the other packages that I've added (minor modes and such):
   - Emacs Git interface
 - [mocha](https://github.com/scottaj/mocha.el)
   - Mode for running Mocha tests
+- [nlimum-mode](http://elpa.gnu.org/packages/nlinum.html)
+  - Better version of linum-mode.
+  - For line numbers
 - [origami](https://github.com/gregsexton/origami.el)
   - Code folding for several major modes
 - [prettier-js](https://github.com/prettier/prettier-emacs)
