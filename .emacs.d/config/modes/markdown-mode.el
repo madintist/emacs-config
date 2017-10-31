@@ -9,6 +9,7 @@
 ;;; Code:
 (use-package markdown-mode
   :ensure t
+  :defer t
   :commands
   (markdown-mode gfm-mode)
   :mode

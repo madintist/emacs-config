@@ -11,6 +11,7 @@
 ;;; Code:
 (use-package hl-todo
   :ensure t
+  :defer t
   :bind
   (("C-c o" . hl-todo-occur))
   :config

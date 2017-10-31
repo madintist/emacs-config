@@ -9,6 +9,7 @@
 ;;; Code:
 (use-package origami
   :ensure t
+  :defer t
   :config
   (global-origami-mode t))
 

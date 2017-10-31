@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package helm-projectile
   :ensure t
+  :defer t
   :config
   (helm-projectile-on)
   )

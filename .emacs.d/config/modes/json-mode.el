@@ -11,6 +11,7 @@
 ;;; Code:
 (use-package json-mode
   :ensure t
+  :defer t
   :init
   (setq json-reformat:indent-width 2))
 

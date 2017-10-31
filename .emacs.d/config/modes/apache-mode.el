@@ -9,7 +9,8 @@
 
 ;;; Code:
 (use-package apache-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 
 
 

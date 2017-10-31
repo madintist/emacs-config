@@ -9,6 +9,7 @@
 
 ;;; Code:
 (use-package ag
+  :defer t
   :ensure t)
 
 

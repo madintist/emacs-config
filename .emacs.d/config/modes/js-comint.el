@@ -9,6 +9,7 @@
 ;;; Code:
 (use-package js-comint
   :ensure t
+  :defer t
   :init
   (setq inferior-js-program-command "node")
   (setq inferior-js-program-arguments '("--interactive"))

@@ -9,6 +9,7 @@
 ;;; Code:
 (use-package tern
   :ensure t
+  :defer t
   :load-path
   ("~/.emacs.d/lib/tern/emacs/")
   :init

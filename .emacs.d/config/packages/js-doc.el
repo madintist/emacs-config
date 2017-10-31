@@ -11,6 +11,7 @@
 ;;; Code:
 (use-package js-doc
   :ensure t
+  :defer t
   :init
   (add-hook 'js2-mode-hook
             #'(lambda ()

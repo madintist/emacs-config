@@ -12,6 +12,7 @@
 ;;; Code:
 (use-package helm-ag
   :ensure t
+  :defer t
   :init
   (setq helm-ag-fuzzy-match t)
   :bind

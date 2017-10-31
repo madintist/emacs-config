@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package eshell-git-prompt
   :ensure t
+  :defer t
   :config
   (eshell-git-prompt-use-theme 'powerline))
 

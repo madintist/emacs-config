@@ -14,6 +14,7 @@
 ;;; Code:
 (use-package js2-mode
   :ensure t
+  :defer t
   :mode
   (("\\.js\\'" . js2-mode)
    ("\\.jsx\\'" . js2-jsx-mode))

@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package helm-swoop
   :ensure t
+  :defer t
   :bind
   (("C-x c h s" . helm-swoop)
    ("C-x c h m" . helm-multi-swoop)))

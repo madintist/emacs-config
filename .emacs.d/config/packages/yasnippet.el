@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package yasnippet
   :ensure t
+  :defer t
   :config
   (yas-global-mode t)
   (define-key yas-minor-mode-map (kbd "TAB") yas-maybe-expand)

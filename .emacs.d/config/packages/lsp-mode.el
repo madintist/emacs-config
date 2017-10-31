@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package lsp-mode
   :ensure t
+  :defer t
   :init
   (require 'lsp-flycheck))
 

@@ -10,6 +10,7 @@
 ;;; Code:
 (use-package projectile
   :ensure t
+  :defer t
   :config
   (setq projectile-mode-line
         '(:eval (format " Projectile[%s(%s)]"
