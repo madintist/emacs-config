@@ -11,7 +11,7 @@
 (use-package nlinum
   :ensure t
   :config
-  (nlinum-mode t))
+  (global-nlinum-mode t))
 
 
 
