@@ -12,7 +12,6 @@
 ;;; Code:
 (use-package auto-complete
   :ensure t
-  :defer t
   :init
   (setq ac-stop-flymake-on-completing t)
   (setq ac-quick-help-delay 0.5)

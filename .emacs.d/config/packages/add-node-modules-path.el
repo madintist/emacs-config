@@ -9,7 +9,6 @@
 ;;; Code:
 (use-package add-node-modules-path
   :ensure t
-  :defer t
   :config
   (eval-after-load 'js-mode
     '(add-hook 'js-mode-hook #'add-node-modules-path))
