@@ -18,6 +18,8 @@ These are the langage modes that I've added:
   - *.md, *.markdown
 - [php-mode](https://github.com/ejmr/php-mode)
   - *.php, *.inc
+- [vue-mode](https://github.com/AdamNiederer/vue-mode)
+  - *.vue
 - [web-mode](http://web-mode.org/)
   - *.phtml, *tpl.php, *.ascx, *.aspx, *.erb, *.mustache, *.djhtml, *.htm, *.hmtl, *.css
 
