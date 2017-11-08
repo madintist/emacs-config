@@ -21,6 +21,9 @@ eshell/
 # *.dat files
 *.dat
 
+# Byte-compiled elisp
+*.elc
+
 # *.eld files
 *.eld
 
