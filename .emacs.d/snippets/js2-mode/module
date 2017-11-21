@@ -6,7 +6,8 @@
 /**
  * @fileOverview ${1:file overview}
  * @name ${2:file name}
- * @author ${3:file author}
+ * @module ${3:module name}
+ * @author ${4:file author}
  */
 
 /******************
@@ -21,10 +22,6 @@
  * Internal Functions *
  **********************/
 
-/********************
- * Public Functions *
- ********************/
-
 /**************
  * Public API *
  **************/
@@ -33,7 +30,8 @@
  * Any variables or functions that we're exporting
  * are referenced here
  * @type {object}
+ * @exports ${3:module name}
  */
-var publicAPI = {}
+let publicAPI = {}
 
 module.exports = publicAPI
