@@ -13,7 +13,7 @@ eshell/
 ## Files to ignore
 
 # Emacs autosave files
-**/\#*\#
+\.#*
 
 # Emacs backup files
 **/*\~
