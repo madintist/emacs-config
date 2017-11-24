@@ -13,7 +13,9 @@
   :ensure t
   :defer t
   :init
-  (setq prettier-js-command "prettier-standard")
+  (if (string= (getenv "EMACS_ENV") "personal")
+      (setq prettier-js-command "prettier")
+    (setq prettier-js-command "prettier-standard"))
   (add-hook 'js2-mode-hook 'prettier-js-mode))
 
 
