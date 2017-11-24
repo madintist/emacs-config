@@ -56,6 +56,8 @@ These are the other packages that I've added (minor modes and such):
   - Highlighting of TODO comments, etc.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
+- [linum-mode](https://www.emacswiki.org/emacs/LineNumbers)
+  - Enable line numbers in buffers
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
   - Microsoft LSP for JavaScript
 - [magit](https://magit.vc/)
