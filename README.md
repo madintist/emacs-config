@@ -56,15 +56,12 @@ These are the other packages that I've added (minor modes and such):
   - Highlighting of TODO comments, etc.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
+- [linum-mode](https://www.emacswiki.org/emacs/LineNumbers)
+  - Enable line numbers in buffers
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
   - Microsoft LSP for JavaScript
 - [magit](https://magit.vc/)
   - Emacs Git interface
-- [nlimum-mode](http://elpa.gnu.org/packages/nlinum.html)
-  - Better version of linum-mode.
-  - For line numbers
-- [origami](https://github.com/gregsexton/origami.el)
-  - Code folding for several major modes
 - [prettier-js](https://github.com/prettier/prettier-emacs)
   - JavaScript linter/formatter
   - Used in js2-mode
