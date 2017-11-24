@@ -60,9 +60,6 @@ These are the other packages that I've added (minor modes and such):
   - Microsoft LSP for JavaScript
 - [magit](https://magit.vc/)
   - Emacs Git interface
-- [nlimum-mode](http://elpa.gnu.org/packages/nlinum.html)
-  - Better version of linum-mode.
-  - For line numbers
 - [origami](https://github.com/gregsexton/origami.el)
   - Code folding for several major modes
 - [prettier-js](https://github.com/prettier/prettier-emacs)
