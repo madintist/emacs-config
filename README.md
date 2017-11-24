@@ -62,8 +62,6 @@ These are the other packages that I've added (minor modes and such):
   - Microsoft LSP for JavaScript
 - [magit](https://magit.vc/)
   - Emacs Git interface
-- [origami](https://github.com/gregsexton/origami.el)
-  - Code folding for several major modes
 - [prettier-js](https://github.com/prettier/prettier-emacs)
   - JavaScript linter/formatter
   - Used in js2-mode
