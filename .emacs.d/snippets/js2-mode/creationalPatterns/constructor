@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: constructor
+# key: constructor
+# --
+
+/**
+ * TODO: Document Constructor
+ * $0
+ */
+function ${1:ConstructorName}(${2:parameters}) {
+  /**************
+   * Properties *
+   **************/
+
+  // TODO: Add properties
+  ${3:properties}
+
+  /*************
+   * Functions *
+   *************/
+
+  // TODO: Add functions
+  ${4:functions}
+}
