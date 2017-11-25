@@ -10,13 +10,14 @@
  * @author ${3:author name}
  * @license ${4:license}
  * @module ${5:module name}
+ * @version ${6:semver number}
  */
 
 /**********
  * Import *
  **********/
 
-${6:module imports}
+${7:module imports}
 
 /***************
  * Constructor *
@@ -26,28 +27,28 @@ ${6:module imports}
  * TODO: Document
  * @constructor
  */
-function ${7:constructor name}(${8:parameters}) {
+function ${8:constructor name}(${9:parameters}) {
   /**************
    * Properties *
    **************/
 
-  ${9:properties}
+  ${10:properties}
 
   /*************
    * Functions *
    *************/
 
-  ${10:instance functions}
+  ${11:instance functions}
 }
 
 /*************
  * Prototype *
  *************/
 
-${11:prototype properties and functions}
+${12:prototype properties and functions}
 
 /**********
  * Export *
  **********/
 
-export default $7;
+export default $8;
