@@ -2,3 +2,52 @@
 # name: constructor
 # key: constructor
 # --
+
+"use strict";
+/**
+ * @fileOverview ${1:overview}
+ * @name ${2:file name}
+ * @author ${3:author name}
+ * @license ${4:license}
+ * @module ${5:module name}
+ */
+
+/**********
+ * Import *
+ **********/
+
+${6:module imports}
+
+/***************
+ * Constructor *
+ ***************/
+
+/**
+ * TODO: Document
+ * @constructor
+ */
+function ${7:constructor name}(${8:parameters}) {
+  /**************
+   * Properties *
+   **************/
+
+  ${9:properties}
+
+  /*************
+   * Functions *
+   *************/
+
+  ${10:instance functions}
+}
+
+/*************
+ * Prototype *
+ *************/
+
+${11:prototype properties and functions}
+
+/**********
+ * Export *
+ **********/
+
+export default $7;
