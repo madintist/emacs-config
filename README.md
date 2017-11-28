@@ -2,6 +2,10 @@
 
 Just my custom Emacs configuration. I'll add more notes about the setup here as I build it out.
 
+## Font
+
+I use [Fira Code](https://github.com/tonsky/FiraCode) for it's custom litgatures.
+
 ## Modes
 
 These are the langage modes that I've added:
