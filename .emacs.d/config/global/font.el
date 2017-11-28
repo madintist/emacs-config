@@ -3,6 +3,7 @@
 
 
 ;;; Commentary:
+;; Add support for Fira Code's litgatures to Emacs.
 
 
 
