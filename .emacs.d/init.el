@@ -63,7 +63,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango-dark))))
+ '(custom-enabled-themes (quote (tango-dark)))
+ '(package-selected-packages
+   (quote
+    (yasnippet tern-auto-complete tern slime prettier-js magit lsp-javascript-typescript js-doc hl-todo helm-swoop helm-projectile helm-ag git-gutter-fringe flycheck evil emmet-mode auto-package-update auto-complete ag add-node-modules-path web-mode vue-mode php-mode markdown-mode json-mode js2-mode js-comint apache-mode exec-path-from-shell use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
