@@ -14,7 +14,7 @@
   (setq projectile-mode-line
         '(:eval (format " Projectile[%s(%s)]"
                         (projectile-project-name))))
-  (projectile-mode t))
+  (projectile-global-mode))
 
 
 
