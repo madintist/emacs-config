@@ -17,9 +17,16 @@
 ;; Load package archives
 (require 'package) ; Load the package system into Emacs
 (setq package-enable-at-startup nil) ; Turn off startup packages. Using use-package for this.
-(add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/")) ; Load GNU archives
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; Load Marmalade
+(setq package-archives
+      '(("gnu" . "http://elpa.gnu.org/packages/") ; GNU Elpa packages
+        ("melpa stable" . "http://stable.melpa.org/packages/") ; Stable MELPA packages
+        ("melpa" . "http://melpa.org/packages/") ; Marmalade
+        ("marmalade" . "http://marmalade-repo.org/packages/"))) ; Unstable MELPA packages
+(setq package-archive-priorities
+      '(("melpa stable" . 20)
+        ("gnu" . 15)
+        ("marmalade" . 10)
+        ("melpa" . 5)))
 (package-initialize) ; Activate packages
 
 
@@ -57,7 +64,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
- '(package-selected-packages (quote (vue-mode use-package))))
+ '(package-selected-packages
+   (quote
+    (yasnippet tern-auto-complete tern slime prettier-js magit lsp-javascript-typescript js-doc hl-todo helm-swoop helm-projectile helm-ag git-gutter-fringe flycheck evil emmet-mode auto-package-update auto-complete ag add-node-modules-path web-mode vue-mode php-mode markdown-mode json-mode js2-mode js-comint apache-mode exec-path-from-shell use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
