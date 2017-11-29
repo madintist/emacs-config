@@ -18,7 +18,7 @@
 (require 'package) ; Load the package system into Emacs
 (setq package-enable-at-startup nil) ; Turn off startup packages. Using use-package for this.
 (add-to-list 'package-archives '("gnu". "http://elpa.gnu.org/packages/")) ; Load GNU archives
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ; Load MELPA
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/")) ; Load MELPA
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; Load Marmalade
 (package-initialize) ; Activate packages
 
