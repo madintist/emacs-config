@@ -10,27 +10,13 @@
  * @author ${4:file author}
  */
 
-/******************
- * Module Imports *
- ******************/
-
-/****************
- * Declarations *
- ****************/
-
-/**********************
- * Internal Functions *
- **********************/
-
-/**************
- * Public API *
- **************/
+$0
 
 /**
  * Any variables or functions that we're exporting
  * are referenced here
  * @type {object}
- * @exports ${3:module name}
+ * @exports $3
  */
 let publicAPI = {}
 

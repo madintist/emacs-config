@@ -10,25 +10,7 @@
  */
 
 var ${4:moduleName} = (function () {
-  /******************
-   * Module Imports *
-   ******************/
-
-  /****************
-   * Declarations *
-   ****************/
-
-  /**********************
-   * Internal Functions *
-   **********************/
-
-  /********************
-   * Public Functions *
-   ********************/
-
-  /**************
-   * Public API *
-   **************/
+  $0
 
   /**
    * Any variables or functions that we're exporting

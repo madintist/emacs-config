@@ -4,14 +4,7 @@
 # --
 /**
  * ${3:Document Comment}
- * $0
  */
 function ${1:functionName} (${2:parameters}) {
-  /****************
-   * Declarations *
-   ****************/
-
-  /******************
-   * Function Logic *
-   ******************/
+  $0
 }

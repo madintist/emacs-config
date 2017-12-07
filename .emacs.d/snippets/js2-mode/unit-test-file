@@ -11,26 +11,8 @@
 
 /* eslint-env mocha */
 
-/******************
- * Module Imports *
- ******************/
-
 const chai = require('chai')
 
-/*********
- * Setup *
- *********/
-
-/**************
- * Unit Tests *
- **************/
-
 describe('${4:context}', function () {
-    /*********
-     * Hooks *
-     *********/
-
-    /*********
-     * Tests *
-     *********/
+  $0
 })
