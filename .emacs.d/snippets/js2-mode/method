@@ -6,13 +6,5 @@
  * ${3:Documentation Comment}
  */
 ${1:function name} (${2:parameters}) {
-  /****************
-   * Declarations *
-   ****************/
-
-  /******************
-   * Function Logic *
-   ******************/
-
   $0
 },

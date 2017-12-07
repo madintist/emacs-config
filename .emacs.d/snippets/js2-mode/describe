@@ -3,13 +3,5 @@
 # key: describe
 # --
 describe('${1:scope}', function () {
-  /*********
-   * Hooks *
-   *********/
-
-  /*********
-   * Tests *
-   *********/
-
   $0
 })
