@@ -9,7 +9,10 @@
 
 
 ;;; Code:
-
+(use-package clang-format
+  :ensure t
+  :bind (("C-c i" . clang-format-region)
+         ("C-c u" . clang-format-buffer)))
 
 
 ;;; clang-format.el ends here
