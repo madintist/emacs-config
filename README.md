@@ -36,6 +36,8 @@ These are the other packages that I've added (minor modes and such):
   - Auto completion provider for all major modes
 - [auto-package-update](https://github.com/rranelli/auto-package-update.el)
   - Automatically check for package updates
+- [clang-format](https://github.com/sonatard/clang-format)
+  - Code formatter for C / C++ / Objective-C
 - [emmet-mode](https://github.com/smihica/emmet-mode)
   - Emmet for Emacs
 - [evil](https://github.com/emacs-evil/evil)
