@@ -11,8 +11,7 @@
 ;;; Code:
 (use-package clang-format
   :ensure t
-  :bind (:map c-mode-map
-         ("C-c i" . clang-format-region)
+  :bind (("C-c i" . clang-format-region)
          ("C-c u" . clang-format-buffer)))
 
 
