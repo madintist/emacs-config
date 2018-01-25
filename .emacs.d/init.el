@@ -57,13 +57,22 @@
 (load-directory "~/.emacs.d/config") ; Load the config directory
 
 
+;; Load custom themes
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+
 ;; Code that's automatically added by Custom. Leave it alone.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango-dark)))
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(custom-enabled-themes (quote (seti)))
+ '(custom-safe-themes
+   (quote
+    ("5dc8ea509d300f9b751fce3d94d9885d264c5bda240e90e884d48601955b3f8c" default)))
  '(package-selected-packages
    (quote
     (yasnippet tern-auto-complete tern slime prettier-js magit lsp-javascript-typescript js-doc hl-todo helm-swoop helm-projectile helm-ag git-gutter-fringe flycheck evil emmet-mode auto-package-update auto-complete ag add-node-modules-path web-mode vue-mode php-mode markdown-mode json-mode js2-mode js-comint apache-mode exec-path-from-shell use-package))))
