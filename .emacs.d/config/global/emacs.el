@@ -31,9 +31,5 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 
-;; Theme:
-(load-theme 'seti t)
-
-
 
 ;;; emacs.el ends here
