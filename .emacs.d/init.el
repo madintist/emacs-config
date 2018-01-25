@@ -57,6 +57,10 @@
 (load-directory "~/.emacs.d/config") ; Load the config directory
 
 
+;; Load custom themes
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+
 ;; Code that's automatically added by Custom. Leave it alone.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
