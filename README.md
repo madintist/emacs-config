@@ -62,6 +62,8 @@ These are the other packages that I've added (minor modes and such):
   - Enable line numbers in buffers
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
   - Microsoft LSP for JavaScript
+- [lsp-ui](https://github.com/emacs-lsp/lsp-ui)
+  - UI components for `lsp-mode`
 - [magit](https://magit.vc/)
   - Emacs Git interface
 - [prettier-js](https://github.com/prettier/prettier-emacs)
