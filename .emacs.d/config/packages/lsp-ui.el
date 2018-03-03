@@ -9,6 +9,7 @@
 
 ;;; Code:
 (use-package lsp-ui
+  :ensure t
   :init
   (add-hook 'lsp-mode-hook 'lsp-ui-mode))
 
