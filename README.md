@@ -58,6 +58,8 @@ These are the other packages that I've added (minor modes and such):
   - Really easy way to hop around files
 - [hl-todo](https://github.com/tarsius/hl-todo)
   - Highlighting of TODO comments, etc.
+- [inf-ruby](https://github.com/nonsequitur/inf-ruby/)
+  - Ruby REPL. Required by robe.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
 - [linum-mode](https://www.emacswiki.org/emacs/LineNumbers)
