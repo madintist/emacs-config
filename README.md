@@ -8,6 +8,8 @@ These are the langage modes that I've added:
 
 - [apache-mode](https://www.emacswiki.org/emacs/apache-mode.el)
   - Apache server config files
+- [enhanced-ruby-mode](https://github.com/zenspider/enhanced-ruby-mode)
+  - *.rb
 - [js-comint](https://github.com/redguardtoo/js-comint)
   - JavaScript REPL
 - [js2-mode](https://github.com/mooz/js2-mode)
@@ -56,6 +58,8 @@ These are the other packages that I've added (minor modes and such):
   - Really easy way to hop around files
 - [hl-todo](https://github.com/tarsius/hl-todo)
   - Highlighting of TODO comments, etc.
+- [inf-ruby](https://github.com/nonsequitur/inf-ruby/)
+  - Ruby REPL. Required by robe.
 - [js-doc](https://github.com/mooz/js-doc)
   - Add JSDoc comments
 - [linum-mode](https://www.emacswiki.org/emacs/LineNumbers)
@@ -71,6 +75,8 @@ These are the other packages that I've added (minor modes and such):
   - Used in js2-mode
 - [projectile](https://github.com/bbatsov/projectile)
   - Project jumping / searching
+- [robe](https://github.com/dgutov/robe)
+  - Ruby code navigation
 - [slime](https://common-lisp.net/project/slime/)
   - Common Lisp IDE for Emacs
 - [tern](http://ternjs.net/)
