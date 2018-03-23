@@ -8,6 +8,8 @@ These are the langage modes that I've added:
 
 - [apache-mode](https://www.emacswiki.org/emacs/apache-mode.el)
   - Apache server config files
+- [enhanced-ruby-mode](https://github.com/zenspider/enhanced-ruby-mode)
+  - *.rb
 - [js-comint](https://github.com/redguardtoo/js-comint)
   - JavaScript REPL
 - [js2-mode](https://github.com/mooz/js2-mode)
