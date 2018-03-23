@@ -73,6 +73,8 @@ These are the other packages that I've added (minor modes and such):
   - Used in js2-mode
 - [projectile](https://github.com/bbatsov/projectile)
   - Project jumping / searching
+- [robe](https://github.com/dgutov/robe)
+  - Ruby code navigation
 - [slime](https://common-lisp.net/project/slime/)
   - Common Lisp IDE for Emacs
 - [tern](http://ternjs.net/)
